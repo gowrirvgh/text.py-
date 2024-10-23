@@ -1,48 +1,17 @@
-# Simple Python Calculator with predefined variables
+# Simple Python program demonstrating arithmetic operations
 
 # Predefined variables
-num1 = 10
-num2 = 5
+num1 = 15
+num2 = 4
 
-def add(x, y):
-    return x + y
+# Perform operations
+addition = num1 + num2
+subtraction = num1 - num2
+multiplication = num1 * num2
+division = num1 / num2
 
-def subtract(x, y):
-    return x - y
-
-def multiply(x, y):
-    return x * y
-
-def divide(x, y):
-    if y == 0:
-        return "Error! Division by zero."
-    return x / y
-
-def main():
-    print(f"Predefined numbers are: num1 = {num1}, num2 = {num2}")
-    print("Select operation:")
-    print("1. Add")
-    print("2. Subtract")
-    print("3. Multiply")
-    print("4. Divide")
-
-    choice = input("Enter choice (1/2/3/4): ")
-
-    if choice == '1':
-        print(f"{num1} + {num2} = {add(num1, num2)}")
-
-    elif choice == '2':
-        print(f"{num1} - {num2} = {subtract(num1, num2)}")
-
-    elif choice == '3':
-        print(f"{num1} * {num2} = {multiply(num1, num2)}")
-
-    elif choice == '4':
-        result = divide(num1, num2)
-        print(f"{num1} / {num2} = {result}")
-
-    else:
-        print("Invalid Input")
-
-if __name__ == "__main__":
-    main()
+# Print the results
+print(f"Addition: {num1} + {num2} = {addition}")
+print(f"Subtraction: {num1} - {num2} = {subtraction}")
+print(f"Multiplication: {num1} * {num2} = {multiplication}")
+print(f"Division: {num1} / {num2} = {division:.2f}")  # Format to 2 decimal places
